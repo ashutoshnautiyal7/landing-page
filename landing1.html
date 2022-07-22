@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style a responsive navbar component with Tailwind CSS</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">    
+  </head>
+  <body>
+    <nav class="flex flex-wrap items-center justify-between p-5 bg-[#F1E4FF] md:h-[143px]">      
+      <div  width="120" >
+        logo
+      </div>      
+      <div class="flex md:hidden">
+        <button id="hamburger">
+          <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+          <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+        </button>
+      </div>      
+      <div class="toggle hidden w-full md:w-auto md:flex text-right font-bold md:mr-44 mt-5 md:mt-0  border-blue-900 md:border-none">        
+        <a href="#" class="block hidden md:inline-block text-black hover:text-blue-500 px-10 py-3   rounded-full border-blue-900 md:border-none">Home</a>
+        <a href="#" class="block hidden md:inline-block text-black hover:text-blue-500 px-10 py-3   rounded-full border-blue-900 md:border-none">Explore</a>
+        <a href="#" class="block md:hidden text-black hover:text-blue-500 px-10 py-3   rounded-lg text-center border-pink-900 mb-2 font-md md:border-none">Login</a>
+        <a href="#" class="block md:hidden text-black hover:text-blue-500 px-10 py-3   rounded-lg text-center bg-purple-900 mb-2 font-md text-white md:border-none">Sign up</a>
+        <a href="#" class="block md:hidden text-purple-800 hover:text-blue-500 px-10 py-3 text-left -ml-8  mb-2 font-md  md:border-none">Explore</a>
+        <a href="#" class="block hidden md:inline-block text-purple-700 hover:text-blue-500 px-10 py-3   rounded-full border-blue-900 md:border-none  ">
+            
+            <svg class="h-6 w-6 ml-36 md:ml-0" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+              </svg>
+        </a>
+        
+      </div>      
+    </nav> 
+
+    <div class="container bg-[#33183F] min-w-full flex text-white  h-44 justify-between  md:h-[568px] md:justify-evenly" >
+        <div class="left p-3 my-auto  md:text-[36px] lg:text-[56px] md:leading-[64px] md:w-[40%]   border-black ">
+            <h1>Challenge your curiosity and in a track record </h1>
+
+            <button class="bg-white text-black rounded-full px-6 py-[2px] m-2  ">try it</button>
+        </div>
+
+        <div class="right p-3 my-auto md:text-[56px] md:w-[30%]    border-black  ">
+            <h1 class="text-3xl  md:text-[149px] lg:text-[246px] md:leading-4 ">26</h1>  <p class="md:ml-32  lg:ml-56">mins</p>
+        </div>
+    </div>
+
+    <div class="body1   border-black md:flex">
+      
+      <div class="left-1 md:w-[50%]  my-auto">
+        <div class="flex mx-auto justify-center mt-4">
+          <h1 class="text-[#6B00BF] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">-Ask &nbsp;</h1> 
+          <h1 class="text-[#B20000] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">your &nbsp;</h1>
+          <h1 class="text-[#6B00BF] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">Questions-</h1>
+         </div>
+
+         <p class="  font-medium text-md text-center md:text-lg lg:text-xl md:mt-2"> 
+          Accept nothing without asking questions! <br>
+          Ask a question and enlighten yourself!
+         </p>
+
+         <button class="flex border-4 border-purple-700 rounded-full mx-auto mt-8  ">
+          <div class="py-3 px-8 text-purple-700 font-semibold">
+              Ask Question 
+          </div>
+          <div class="border-4 rounded-full border-purple-700 h-12 w-12 pt-1 text-purple-700 font-bold text-2xl ">
+              &#8594;
+          </div>
+         </button>
+      </div>
+
+      <div class="right-0 mt-6 md:w-[50%] lg:w-[60%]">
+        <img class="h-[] md:w-[1200px]  " src="Group 833.svg" alt="">
+        <div class="hidden md:block bg-purple-200 max-w-screen-lg h-44 rounded-l-full  md:-mt-32  lg:-mt-40 md:ml-56 lg:ml-64 xl:ml-[38rem] "></div>
+      </div>
+
+    </div>
+    <div class="body2   border-black md:flex">
+      
+      <div class="right-0 mt-6 md:w-[50%] lg:w-[60%] my-auto">
+        <img class="h-[] md:w-[1200px]  " src="Group 829.svg" alt="">
+        <div class="hidden md:block bg-purple-200 max-w-screen-lg h-44 rounded-r-full  md:-mt-32  lg:-mr-40 md:mr-56 lg:mr-64 xl:mr-[38rem] "></div>
+      </div>
+      
+      <div class="left-1 md:w-[50%]  my-auto">
+        <div class="flex mx-auto justify-center mt-4">
+          <h1 class="text-[#6B00BF] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">-Connect &nbsp;</h1> 
+          <h1 class="text-[#B20000] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">with &nbsp;</h1>
+          <h1 class="text-[#6B00BF] font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl">experts-</h1>
+         </div>
+
+         <p class="  font-medium text-md text-center md:text-lg lg:text-xl md:mt-2 px-2 md:px-6 lg:px-16"> 
+          Lorem, ipsum dolor sit amet  velit ut ipsam repudiandae itaque inventore mollitia qui repellendus animi aspernatur reiciendis quas dolor, illum expedita ad delectus. Molestias, nulla!
+         </p>
+
+         <button class="flex border-4 border-purple-700 rounded-full mx-auto mt-8 m-2 ">
+          <div class="py-3 px-8 text-purple-700 font-semibold">
+              connect with us 
+          </div>
+          <div class="border-4 rounded-full border-purple-700 h-12 w-12 pt-1 text-purple-700 font-bold text-2xl ">
+              &#8594;
+          </div>
+         </button>
+      </div>
+
+      
+
+    </div>
+    <div class="body3   border-black md:flex">
+      
+      <div class="left-1 md:w-[50%]  my-auto">
+        <div class="flex mx-auto justify-center mt-4 ">
+          <h1 class=" font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">lorem ipusm dolor imat</h1> 
+        
+         </div>
+
+         <p class="  font-medium text-md text-center md:text-lg lg:text-xl md:mt-2   px-2 md:px-6 lg:px-16"> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit quod eaque? Suscipit blanditiis consequatur fugit nam, provident sunt placeat. Labore, pariatur possimus.
+         </p>
+
+
+         
+         <button class="flex   bg-green-500  text-gray-50 rounded-full mt-8  mx-auto   ">
+          <div class="py-3 px-8  font-semibold">
+              It's free download now. 
+          </div>
+          
+         </button>
+      </div>
+
+      <div class="right-0 mt-6 md:w-[50%] lg:w-[60%]">
+        <img class="h-[] md:w-[1200px]  " src="Group 828.svg" alt="">
+        <div class="hidden md:block bg-purple-200 max-w-screen-lg h-44 rounded-l-full  md:-mt-32  lg:-mt-40 md:ml-56 lg:ml-64 xl:ml-[38rem] "></div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+      document.getElementById("hamburger").onclick = function toggleMenu() {
+        const navToggle = document.getElementsByClassName("toggle");
+        for (let i = 0; i < navToggle.length; i++) {
+          navToggle.item(i).classList.toggle("hidden");
+        }
+      };
+    </script>     
+  </body>
+</html>
